@@ -9,13 +9,13 @@ spinWords( "This is a test") => returns "This is a test" spinWords( "This is
 another test" )=> returns "This is rehtona test"
 """
 def spin_words(sentence):
-    frase = []
+    words = []
     for item in sentence.split():
         if len(item) >= 5:
-            frase.append(item[::-1])
+            words.append(item[::-1])
         else:
-            frase.append(item)
+            words.append(item)
 
-    return " ".join(frase)
+    return " ".join(words)
 
 
